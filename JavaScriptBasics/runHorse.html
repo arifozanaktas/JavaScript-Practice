@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="run()">Koş Bakalım!</button>
+    <hr>
+    <img id="at" src="https://cdn-images.bloodhorse.com/i/bloodhorse-images/2018/01/d32fffe3c3174b94ac66c74959853bba.jpg?preset=sh" alt="" style="width: 112px; height: 80px;">
+</body>
+<script>
+    function run(){
+        var left = 0.5
+        setInterval(() => {
+            document.getElementById('at').style.marginLeft = left + 'px'
+            left = left+0.5
+        }, 1);
+    }
+</script>
+</html>

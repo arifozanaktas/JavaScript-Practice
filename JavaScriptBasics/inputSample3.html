@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <input type="number"  id="number">
+    <button onclick="go()">Go!</button>
+    <hr>
+    <img src="https://yt3.googleusercontent.com/9whn1lBZrZ9cvxmAfo8vjBE0hI_nvbGH8kVPNqMh1JfVN7pKCqqU5adFKD9HBBIe290ucCUL=s900-c-k-c0x00ffffff-no-rj" id="photo" style="width: 100px; height: 100px;">
+</div>
+</body>
+<script>
+
+    var total = 0
+    function go(){
+        var left = document.getElementById('number').value
+        total = total+Number(left)
+        document.getElementById('photo').style.marginLeft= total+ 'px'
+
+}
+</script>
+</html>

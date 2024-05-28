@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box" style="width: 75px; height: 75px; background-color: aqua; position: fixed;"></div>
+</body>
+<script>
+    //yukarıdaki id si box olan div her yarım saniyede ekranda rastgele yer değiştirsin
+    var left = 0;
+    var right = 0;
+
+    setInterval(() => {
+        // ekrandaki box yarım saniyede bir pozisyon değiştirecek
+        var randomLeft = Math.floor(Math.random() * 1000)
+        var randomTop = Math.floor(Math.random() * 500)
+
+        document.getElementById('box').style.left = randomLeft + 'px'
+        document.getElementById('box').style.top = randomTop + 'px'
+
+    }, 500);
+</script>
+
+</html>
