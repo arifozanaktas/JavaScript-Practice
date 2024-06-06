@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="go()">Rastgele Sağa Git</button>
+    <div id="box" style="width: 100px; height: 100px; border-style: solid; background-color: blueviolet;">
+
+    </div>
+</body>
+<script>
+    
+    var left = 50;
+    function go(){
+        //50 ile 250 rasında rastgele bir sayı tanımla
+
+        document.getElementById('box').style.marginLeft = left + 'px'
+
+        var randomNumber = Math.floor(Math.random()*200)
+    // 0-250 arasında bir sayı üretir.
+        left = left + randomNumber
+
+    }
+
+</script>
+</html>
