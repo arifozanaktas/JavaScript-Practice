@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading...</div>
+    <div id="content">
+        <h1>Hoşgeldiniz</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima veritatis quaerat non nisi magni quasi accusamus at, ipsa mollitia ipsum, nemo pariatur deserunt facere quod veniam delectus. Unde, non ipsam!</h2>
+    </div>
+    <script>
+        window.onload = function(){
+            document.getElementById('loading').style.display = 'none'
+            document.getElementById('content').style.display = 'block'
+        }
+    </script>
+</body>
+</html>

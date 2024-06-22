@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <style>
+        /* .container #baslik.red{
+            color: red
+        } */
+        button {
+            padding: 20px;
+            background-color: bisque;
+            border-top-left-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 id="baslik" class="red">Başlık</h1>
+        </div>
+        <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <button>Sayfa Butonu</button>
+    </div>
+    <script>
+        const baslik = document.getElementById('baslik')
+        baslik.style.color = 'red';
+
+        let paragraf1 = document.getElementsByClassName("paragraf")
+        let paragraf2 = document.querySelector(".container #baslik.red")
+
+        const btn = document.querySelector("button")
+
+        btn.style.borderTopLeftRadius = '30px';
+        btn.style.backgroundColor = 'brown';
+
+
+        function random(number){
+            return Math.floor(Math.random() * (number + 1))
+        }
+        
+
+        btn.addEventListener("click", function() {
+            console.log(random(10))
+            const changedColor = 'rgb('+ random(255) +',' + random(255) +','+ random(255) +')';
+            btn.style.backgroundColor  = changedColor
+            
+        });
+    </script>
+</body>
+</html>
